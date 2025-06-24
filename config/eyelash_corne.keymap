@@ -37,10 +37,10 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB    &kp Q  &kp D  &kp L  &kp W  &none                      &none         &none      &kp J  &kp O  &kp Y  &kp P  &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp E  &kp R  &kp T               &none  &none  &none  &kp COMMA  &kp U  &kp N  &kp I  &kp H  &kp RET
-&kp ESC    &kp F  &kp Z  &kp X  &kp C  &kp V      &none           &none         &kp DOT    &kp G  &kp B  &kp K  &kp M  &kp SEMI
-                         &mo 4  &mo 2  &kp SPACE                                &kp SPACE  &mo 1  &mo 4
+&kp TAB    &kp Q  &kp D        &kp L           &kp W           &none                      &none         &none      &kp J            &kp O            &kp Y        &kp P  &kp BSPC
+&kp LSHFT  &kp A  &mt LCTRL S  &mt LALT E      &mt LGUI R      &kp T               &none  &none  &none  &kp COMMA  &mt RGUI U       &mt RALT N       &mt RCTRL I  &kp H  &kp RET
+&kp ESC    &kp F  &kp Z        &kp X           &kp C           &kp V      &none           &none         &kp DOT    &kp G            &kp B            &kp K        &kp M  &kp SEMI
+                               &mo 4           &mo 2           &kp SPACE                                &kp SPACE  &mo 1            &mo 4
             >;
         };
 
@@ -77,40 +77,40 @@
         layer_4 {
             display-name = "L4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans      &trans  &trans  &trans  &trans  &trans
-                        &none   &mo 6   &kp SPACE                                    &kp SPACE   &mo 5   &to 0
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans
+                        &none   &mo 6   &kp SPACE                                    &kp SPACE  &mo 5   &to 0
             >;
         };
 
         layer_5 {
             display-name = "L5";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &none   &mo 6   &kp SPACE                                    &kp SPACE   &mo 5   &to 0
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans
+                        &none   &mo 6   &kp SPACE                                    &kp SPACE  &mo 5   &to 0
             >;
         };
 
         layer_6 {
             display-name = "L6";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &none   &none   &kp SPACE                                    &kp SPACE   &mo 7   &to 0
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans
+                        &none   &none   &kp SPACE                                    &kp SPACE  &mo 7   &to 0
             >;
         };
 
         layer_7 {
             display-name = "L7";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &none   &none   &kp SPACE                                    &kp SPACE    &none   &to 0 
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans
+                        &none   &none   &kp SPACE                                    &kp SPACE  &none   &to 0
             >;
         };
 
@@ -120,7 +120,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &to 0 
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
 
@@ -130,7 +130,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &to 0 
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
 
@@ -140,7 +140,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &to 0 
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
 
@@ -150,7 +150,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &to 0 
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
 
@@ -160,7 +160,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &to 0 
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
