@@ -15,14 +15,6 @@
 
 / {
     behaviors {
-        mt: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap";
-        };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -45,10 +37,10 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB    &kp Q  &kp D        &kp L           &kp W           &none                      &none         &none      &kp J            &kp O            &kp Y        &kp P  &kp BSPC
-&kp LSHFT  &kp A  &mt LCTRL S  &mt LALT E      &mt LGUI R      &kp T               &none  &none  &none  &kp COMMA  &mt RGUI U       &mt RALT N       &mt RCTRL I  &kp H  &kp RET
-&kp ESC    &kp F  &kp Z        &kp X           &kp C           &kp V      &none           &none         &kp DOT    &kp G            &kp B            &kp K        &kp M  &kp SEMI
-                               &mo 4           &mo 2           &kp SPACE                                &kp SPACE  &mo 1            &mo 4
+&kp TAB    &kp Q  &kp D  &kp L  &kp W  &none                      &none         &none      &kp J  &kp O  &kp Y  &kp P  &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp E  &kp R  &kp T               &none  &none  &none  &kp COMMA  &kp U  &kp N  &kp I  &kp H  &kp RET
+&kp ESC    &kp F  &kp Z  &kp X  &kp C  &kp V      &none           &none         &kp DOT    &kp G  &kp B  &kp K  &kp M  &kp SEMI
+                         &mo 4  &mo 2  &kp SPACE                                &kp SPACE  &mo 1  &mo 4
             >;
         };
 
@@ -57,7 +49,7 @@
             bindings = <
 &trans  &kp N1     &kp N2           &kp N3  &kp N4  &kp N5                         &none         &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &trans
 &trans  &kp GRAVE  &rgb_ug RGB_OFF  &none   &none   &none                   &none  &none  &none  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
-&trans  &none      &none            &none   &none   &none          &none           &none         &trans  &kp SEMI   &kp COMMA  &none     &none     &none
+&trans  &none      &none            &none   &none   &kp FSLH       &none           &none         &trans  &kp SEMI   &kp COMMA  &none     &none     &none
                                     &mo 5   &mo 3   &kp BACKSPACE                                &mo 3   &none      &to 0
             >;
         };
@@ -83,12 +75,12 @@
         };
 
         layer_4 {
-            display-name = "L4";
+            display-name = "L4 HRM sk";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans
-                        &none   &mo 6   &kp SPACE                                    &kp SPACE  &mo 5   &to 0
+&trans  &trans     &trans     &trans    &trans    &trans                       &trans          &trans     &trans    &trans    &trans     &trans      &trans
+&trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LGUI  &trans               &trans  &trans  &trans  &trans     &sk RGUI  &sk RALT  &sk RCTRL  &sk RSHIFT  &trans
+&trans  &trans     &trans     &trans    &trans    &trans     &trans            &trans          &trans     &trans    &trans    &trans     &trans      &trans
+                              &trans    &mo 6     &kp SPACE                                    &kp SPACE  &mo 5     &to 0
             >;
         };
 
