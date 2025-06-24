@@ -15,6 +15,14 @@
 
 / {
     behaviors {
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
